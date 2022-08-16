@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS</title>
+    <style>
+        :root {
+            /* --property-name: property-value; */
+            --color: red;
+            --border: 2px solid black;
+            --width: 200px;
+        }
+
+        h1 {
+            color: var(--color);
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        p {
+            background-color: aqua;
+            border: var(--border);
+        }
+
+        section {}
+
+        aside {
+            width: 200px;
+            height: 300px;
+            background-color: burlywood;
+            float: left;
+        }
+
+        .blog {
+            width: calc(100% - 2*var(--width));
+            /* width: calc(100% - 200px); */
+            height: 300px;
+            background-color: blueviolet;
+            float: left;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>this is my heading</h1>
+        <h2>this is second heading</h2>
+        <p>this is my paragraph</p>
+    </header>
+    <section>
+        <aside>
+            myside navigation
+        </aside>
+        <div class="blog">
+            <h4>
+                <blog>blog</blog>
+            </h4>
+        </div>
+    </section>
+    <footer>
+        <div>copyright</div>
+    </footer>
+
+</body>
+
+</html>
